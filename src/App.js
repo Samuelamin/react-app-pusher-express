@@ -6,11 +6,16 @@ const App = () => {
   const [username, setUsername] = useState("");
   const [showErr, setShowErr] = useState("");
   const [channel, setChannel] = useState(null);
+  const pusherUrl = "https://react-app-puhser-server.vercel.app";
 
   useEffect(() => {
     const pusher = new Pusher("d6574b51b1d1e9d01b5d", {
       cluster: "mt1",
       encrypted: true,
+      wsHost: pusherUrl,
+      httpHost: pusherUrl,
+      wssPort: 443,
+      httpPort: 80,
     });
 
     const channelInstance = pusher.subscribe("private-my-channel");
