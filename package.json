@@ -1,7 +1,7 @@
 {
   "name": "react-app",
   "version": "0.1.0",
-  "proxy" : "http://localhost:5000",
+  "proxy" : "https://react-app-puhser-server-58clsqpbm-samuelamins-projects.vercel.app",
   "private": true,
    "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
